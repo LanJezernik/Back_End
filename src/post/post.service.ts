@@ -33,7 +33,7 @@ export class PostService extends AbstractService{
         const post = (await this.findById(id)) as Posti;
         console.log(post.id);
         try {
-            console.log('rahatluka');
+            console.log('test');
             post.content = updatePostDto.content;
             post.title = updatePostDto.title;
             return this.postRepository.save(post);
